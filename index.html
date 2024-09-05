@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Market Data</title>
+  <style>
+    /* Add some basic styling */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <input type="text" id="search" placeholder="Search...">
+  <button id="searchBtn">Search</button>
+  <button id="sortMarketCap">Sort by Market Cap</button>
+  <button id="sortChange">Sort by % Change</button>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Symbol</th>
+        <th>Current Price</th>
+        <th>Total Volume</th>
+        <th>Market Cap</th>
+        <th>% Change</th>
+      </tr>
+    </thead>
+    <tbody id="dataTable">
+      <!-- Data rows will be inserted here -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
